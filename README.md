@@ -1,6 +1,7 @@
-# Backup-Google-Drive
+# Backup-MongoDB-to-Google-Drive
 
-This is a simple script to backup your Google Drive to your local machine. It uses the Google Drive API to download all files and folders from your Google Drive. It will create a folder structure on your local machine that mirrors your Google Drive. It will also create a log file that contains the file/folder name, the file/folder ID, and the file/folder size.
+This is a simple script to backup your MongoDB database to Google Drive.
+Update the script with your database name and Google Drive root folder ID, access token and users id.
 
 ## Input your Google Drive credentials
 
@@ -12,12 +13,33 @@ Algorithmia:
 
 ## Requirements
 
+## Using bash-script
+
+> Create virtual environment
+```bash
+python3 -m venv venv
+```
+- - - -
+
+> Activate virtual environment
+```bash
+source venv/bin/activate
+```
+
+- - - -
+> Install requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run
-
+- - - - 
+> Make bash-file executable
 ```bash
-python src/run-backup-process.py 
+chmod +x run-backup-process.sh
+```
+
+- - - -
+> Run script
+```bash
+./run-backup-process.sh
 ```
